@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Personnalisable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="texte">Aubin Delhaye est un graphiste français, basé entre Bruxelles et Grenoble.</div>
+
+    <!-- Conteneur pour les contrôles dans le footer -->
+    <footer class="controls">
+        <!-- Curseur pour changer la taille du texte -->
+        <div class="left">
+            <label for="tailleTexte">Taille du texte :</label>
+            <input type="range" id="tailleTexte" min="16" max="48" value="24">
+        </div>
+
+        <!-- Menu déroulant pour changer la police -->
+        <div class="center">
+            <label for="selectFonte">Changer la fonte :</label>
+            <select id="selectFonte">
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="Georgia, serif">Georgia</option>
+                <option value="Courier New, monospace">Courier New</option>
+                <option value="Tahoma, sans-serif">Tahoma</option>
+                <option value="Verdana, sans-serif">Verdana</option>
+            </select>
+        </div>
+
+        <!-- Bouton pour inverser les couleurs -->
+        <div class="right">
+            <button id="btnInverserCouleurs">Inverser les couleurs</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
